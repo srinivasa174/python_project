@@ -10,9 +10,16 @@ class Vehicle(object, metaclass=ABCMeta):
 
 class Car(Vehicle):
     def __init__(self, eng_type, brand, break_type, colour):
-
         print("__init__car")
         super().__init__(eng_type, brand, break_type, colour)
+
+class Bus(Vehicle):
+    def __init__(self, eng_type, brand, break_type, colour):
+        print("__init__car")
+        super().__init__(eng_type, brand, break_type, colour)
+
+    
+
 
 
 
@@ -20,5 +27,7 @@ class Car(Vehicle):
 if __name__ == "__main__":
     c1 = Car("petrol","Honda","disk","white")
     print(c1)
-    # v =Vehicle("petrol","Honda","disk","white")
+    # v =Vehicle("petrol","TATA","disk","white")
     # print(v)
+
+
